@@ -1,0 +1,239 @@
+
+.Universal{
+  background-image: url(/fon3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; /* Или contain */
+  background-position: center;
+  background-attachment: fixed; /* Фон остается на месте */
+
+  width: 100%; 
+}
+
+.universal__wrap{
+   display: flex;
+   flex-direction: column;
+padding: 30px;
+   color: rgb(0, 0, 0);
+//   width: 1200px;
+  height: 580px;
+  border-radius: 20px;
+   background-image: url(/public/Universal_Pictures_logo_2.png);
+   
+ background-color: rgba(13, 48, 53, 0.307);
+ background-size: 100%; 
+//  background-size: 100px 200px; /* ширина 100px, высота 200px */
+
+   background-repeat: no-repeat;
+  //  background-size: cover; /* Или contain */
+   background-position: center;
+  //  background-attachment: fixed; /* Фон остается на месте */
+ 
+   width: 100%; 
+
+
+
+   h1{
+      padding-top: 90px;
+      font-size: 50px;
+   text-align: center;
+@media (max-width:950px) {
+  font-size: 40px;
+}
+@media (max-width:450px) {
+  font-size: 30px;
+}
+   }
+
+   h2{
+      padding-top: 200px;
+      font-size: 35px;
+   text-align: center;
+   @media (max-width:950px) {
+    font-size: 25px;
+  }
+   @media (max-width:450px) {
+    font-size: 23px;
+  }
+   }
+   
+   img{
+    width: 5%;
+   }
+
+
+}
+
+.universal__wrap2{
+
+   p{
+      padding-top: 20px;
+      font-size: 25px;
+   }
+
+}
+
+.circle-list {
+  display: flex;
+   list-style-type: none; /* Убираем стандартные маркеры списка */
+   padding: 0;
+   margin: 0;
+
+   @media (max-width: 930px) {
+     flex-direction: column;
+
+   }
+
+ }
+ 
+ .circle-list li {
+   margin-bottom: 10px; /* Отступ между элементами */
+   position: relative; /* Для позиционирования кружка */
+
+
+  
+ }
+ 
+ .circle-list li::before {
+   content: "O"; /* Символ круга */
+   color: blue; /* Цвет круга */
+   position: absolute;
+   left: -25px; /* Расстояние кружка от текста */
+  
+ }
+ 
+ .circle-list a {
+   text-decoration: none; /* Убираем подчеркивание */
+   color: blue; /* Цвет текста */
+   font-size: 18px; /* Размер текста */
+ }
+ 
+ .circle-list a:hover {
+   text-decoration: underline; /* Подчеркивание при наведении */
+
+
+ }
+ 
+ .box__quest{
+
+width: 50%;
+height: 100px;
+border-bottom: solid 2px rgba(139, 136, 136, 0.515);
+   ul{
+     display: flex;
+justify-content: space-around;
+  padding-left: 30px;
+
+   }
+
+   @media (max-width: 940px) {
+    border: none;
+  }
+
+ }
+
+ .tekstAi__wrap, .tekstAi__wrap__image{
+padding-top: 50px;
+
+  img{
+    width: 50%;
+    padding-top: 20px;
+  }
+p{
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+h1{
+  padding-top: 80px;
+  font-size: 35px;
+}
+  
+ }
+
+ .div__text{
+  padding: 20px;
+display: flex;
+flex-direction: column;
+
+li{
+font-size: 20px;
+  color: black;
+}
+
+  p{
+
+    font-size: 10px;
+  }
+ 
+ }
+
+ .info-card {
+  background-color: rgba(255, 255, 255, 0.562);
+  padding: 20px;
+  border-radius: 8px;
+  font-family: 'Arial, sans-serif';
+  max-width: 500px;
+  line-height: 1.5;
+
+  box-shadow: 0 0 15px 5px rgba(207, 184, 241, 0.75);
+
+
+  p {
+    margin: 0 0 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.div__card{ 
+padding-top: 20px;
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+
+
+}
+
+.try{
+margin: 20px;
+
+  border-radius: 10px;
+  border: none ;
+  padding: 15px;
+  width: 150px;
+  background-color: rgb(141, 141, 255);
+  text-align: center;
+transition: 0.5s;
+text-decoration: none;
+margin-left: 100px;
+display: flex;
+align-items: start;
+justify-content: center;
+
+  &:hover{
+    background-color: rgb(60, 60, 201);
+    color: whitesmoke;  
+  box-shadow: 0 0 15px 5px rgba(115, 54, 207, 0.75);
+         
+  }
+
+}
+
+.scale{
+width: 100%;
+height: 493px;
+object-fit: cover;
+}
+
+
+.tekstAi__wrap__image{
+  
+
+  img{
+    width: 60%;
+  }
+}
+
+
+    

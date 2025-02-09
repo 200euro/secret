@@ -1,0 +1,91 @@
+// .react-tabs__tab-list{
+//    cursor: pointer;
+
+
+
+// a{
+//    text-decoration: none;
+// }
+
+// }
+
+// .tabs-content {
+//    width: 300px;
+//    padding: 20px;
+//    background-color: #f9f9f9;
+//    border: 1px solid #ddd;
+//    border-radius: 4px;
+//    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+//  }
+ 
+
+
+.tabs-content {
+
+
+    padding: 10px;
+  border: 1px solid  #9900ff; 
+border-radius: 10px;
+
+
+ }
+ 
+ .scrollable-tab-list {
+  // background-color: red;
+   display: flex; /* Включаем горизонтальное выравнивание */
+  //  flex-direction:  column;
+   overflow-x: auto; /* Добавляем горизонтальную прокрутку */
+  //  scrollbar-width: thin; /* Уменьшаем ширину скроллбара (для Firefox) */
+   white-space: nowrap; /* Запрещаем перенос элементов */
+   gap: 10px; /* Расстояние между вкладками */
+  //  padding: 10px 0;
+ }
+ 
+ .scrollable-tab-list::-webkit-scrollbar {
+   height: 0px; /* Высота скроллбара */
+ }
+ 
+ .scrollable-tab-list::-webkit-scrollbar-thumb {
+   background: #888; /* Цвет ползунка */
+   border-radius: 10px;
+ }
+ 
+ .scrollable-tab-list::-webkit-scrollbar-thumb:hover {
+   background: #555; /* Цвет при наведении */
+ }
+ 
+ .scrollable-tab-list > a {
+   text-decoration: none;
+ }
+ 
+ .scrollable-tab-list > a > .react-tabs__tab {
+  //  padding: 20px 90px;
+   margin: 0 5px;
+  //  border: 1px solid #ccc;
+   border-radius: 5px;
+   cursor: pointer;
+  //  background-color: #f7f7f7;
+   transition: background-color 0.3s, border-color 0.3s;
+   a{
+    font-size: 10px;
+  }
+ }
+ 
+ .scrollable-tab-list > a > .react-tabs__tab:hover {
+border-bottom: 2px solid #9900ff;
+   border-color: #aaa;
+ }
+ 
+ ul {
+  list-style-type: none; /* Убирает маркеры */
+
+}
+
+
+.tabs-article {
+  display: flex;
+  flex-direction: column; // Элементы отображаются в столбик
+  gap: 10px; // Расстояние между элементами
+  padding: 10px;
+  background-color: white;
+}

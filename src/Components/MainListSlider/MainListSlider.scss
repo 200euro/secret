@@ -1,0 +1,105 @@
+
+section{
+  padding-top: 15px;
+}
+
+.slider-container {
+
+   width: 100%;  
+   overflow: hidden;
+   position: relative;
+   height: 200px; /* Задайте высоту слайдера */
+
+   @media (max-width: 500px) {
+   height: 100px;
+   }
+ }
+ 
+ .slider-track {
+   display: flex;
+   animation: scroll 10s linear infinite; /* 10s - скорость анимации */
+ }
+ 
+ .slide {
+   min-width: 300px; /* Ширина каждого слайда */
+  //  margin-right: 20px; /* Отступ между слайдами */
+
+  @media (max-width: 768px) {
+    min-width: 150px;
+    
+  }
+ }
+ 
+ .slide img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+ 
+ @keyframes scroll {
+   0% {
+     transform: translateX(0);
+   }
+   100% {
+     transform: translateX(-100%);
+   }
+ }
+ 
+
+
+ 
+
+.slider-container2 {
+
+
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 200px; /* Задайте высоту слайдера */
+
+  @media (max-width: 768px) {
+    height: 150px;
+    
+  }
+  @media (max-width: 600px) {
+    height: 100px;
+    
+  }
+
+
+}
+
+.slider-track2{
+  display: flex;
+  animation: scroll 25s linear infinite; /* 10s - скорость анимации */
+}
+
+.slide2 {
+  min-width: 300px; /* Ширина каждого слайда */
+
+
+  @media (max-width: 768px) {
+    min-width: 150px;
+    
+  }
+}
+
+.slide2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-track {
+   display: flex;
+   animation: scroll-reverse 25s linear infinite; /* Анимация в обратную сторону */
+ }
+ 
+ @keyframes scroll-reverse {
+   0% {
+     transform: translateX(-100%); /* Начинаем с конца */
+   }
+   100% {
+     transform: translateX(0); /* Движемся к началу */
+   }
+ }
