@@ -188,8 +188,7 @@ const Header = () => {
     <header className="header">
       <div className="container1">
         <div className="header__wrap">
-          <div data-aos="fade-down" data-aos-easing="linear"
-     data-aos-duration="1500" >
+          <div  >
  
             <Link to="/">
               <img  src="/logo-akmal.png" alt="Logo Akmal" />

@@ -102,7 +102,7 @@ import Header from "../Components/Header/Header";
 
 const AdminPanel = () => {
     const [projects, setProjects] = useState([]);
-    const [editingProject, setEditingProject] = useState(null); // Хранит редактируемый товар
+    const [editingProject, setEditingProject] = useState(null);
     const { register, handleSubmit, reset, setValue } = useForm();
 
     const fetchProjects = async () => {
@@ -116,17 +116,17 @@ const AdminPanel = () => {
 
     const onSubmit = async (data) => {
         if (editingProject) {
-            // Редактирование товара
+          
             try {
                 await axios.put(`http://localhost:3001/products/${editingProject.id}`, data);
                 fetchProjects();
                 reset();
-                setEditingProject(null); // Сбрасываем редактируемый товар
+                setEditingProject(null); 
             } catch (error) {
                 console.error("Error updating project:", error);
             }
         } else {
-            // Добавление нового товара
+
             try {
                 await axios.post("http://localhost:3001/products", data);
                 fetchProjects();
@@ -147,8 +147,8 @@ const AdminPanel = () => {
     };
 
     const editProject = (project) => {
-        setEditingProject(project); // Устанавливаем текущий редактируемый товар
-        setValue("name", project.name); // Заполняем форму текущими данными
+        setEditingProject(project); 
+        setValue("name", project.name); 
         setValue("description", project.description);
         setValue("image", project.image);
     };

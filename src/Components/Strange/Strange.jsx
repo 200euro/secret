@@ -236,6 +236,9 @@ const Strange = () => {
         </p>
 </div>
 
+
+
+
         </div>
         <Footer />
       </section>
